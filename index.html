@@ -12,10 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="head">
+    <div class="head top-head">
         <div class="container">
             <div class="logo">
                 <img src="src/img/logo.png" alt="Claystones logo" />
+                <button class="hamburger-btn" onclick="toggleLinks()">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
             </div>
             <ul class="links">
                 <li class="active"><a href="#">Home</a></li>
@@ -79,7 +86,31 @@
         </div>
     </div>
 
-    <div class="why"></div>
+    <div class="why">
+        <div class="container">
+            <div class="caption">
+                <h2>Why Choose Us</h2>
+                <p>we curate inspiration from home, connecting the creative work of artisans & designers to people and places around the world</p>
+            </div>
+            <div class="row">
+                <div class="content">
+                    <img src="src/img/quality.svg" alt="Qaulity icon" />
+                    <h3>Quality Assured</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odio obcaecati aperiam ut.</p>
+                </div>
+                <div class="content">
+                    <img src="src/img/price.svg" alt="Price icon" />
+                    <h3>Best Price</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odio obcaecati aperiam ut.</p>
+                </div>
+                <div class="content">
+                    <img src="src/img/authentic.svg" alt="Authentic icon" />
+                    <h3>Authentic</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odio obcaecati aperiam ut.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="outlets">
         <div class="container">
@@ -93,7 +124,25 @@
         </div>
     </div>
 
-    <div class="portfolio"></div>
+    <div class="portfolio">
+        <div class="container">
+            <div class="caption">
+                <img src="src/img/twig.png" alt="Twig image">
+                <h2>Portfolio</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            </div>
+            <div class="carousel">
+                <div class="nav left"><i class="fas fa-angle-left"></i></div>
+                <div class="images">
+                    <div class="image" style="background: url(src/img/gallery-1.png), #fff;"></div>
+                    <div class="image px400" style="background: url(src/img/portfolio-2.png), #fff;"></div>
+                    <div class="image px700" style="background: url(src/img/portfolio-3.png), #fff;"></div>
+                    <div class="image px900" style="background: url(src/img/portfolio-4.png), #fff;"></div>
+                </div>
+                <div class="nav right"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
 
     <div class="contact">
         <div class="container">
@@ -195,5 +244,13 @@
             </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        function toggleLinks() {
+            console.log('hie');
+            $('.head .links').toggleClass('active');
+        }
+    </script>
 </body>
 </html>
