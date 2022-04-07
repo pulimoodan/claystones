@@ -24,6 +24,7 @@ input:focus, textarea:focus{
     justify-content: center;
     font-weight: 600;
     cursor: pointer;
+    width: fit-content;
 }
 
 .btn i{
@@ -34,7 +35,7 @@ input:focus, textarea:focus{
     background: #fff;
 }
 
-button.rounded{
+button.rounded, a.rounded{
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -46,7 +47,7 @@ button.rounded{
     cursor: pointer;
 }
 
-button.rounded:hover{
+button.rounded:hover, a.rounded:hover{
     opacity: 0.7;
 }
 
@@ -55,14 +56,14 @@ button.rounded.outlined{
     color: #fff;
 }
 
-button.rounded.primary{
+button.rounded.primary, a.rounded.primary{
     border: none;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
     background: #fff;
     color: rgba(0,0,0,0.5);
 }
 
-button.rounded.primary{
+button.rounded.primary, a.rounded.primary{
     font-size: 0.7rem;
     width: 25px;
     height: 25px;
@@ -597,6 +598,7 @@ button.rounded.primary{
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    max-width: 250px;
 }
 
 .footer .head .content img{
@@ -952,6 +954,17 @@ button.rounded.primary{
 }
 
 @media(max-width:400px){
+    .main .box:first-of-type{
+        text-align: center;
+    }
+    .main .box:first-of-type .content{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .main .box:first-of-type .content a{
+        margin: 0 auto;
+    }
     .contact .box{
         background: none;
         padding: 0;

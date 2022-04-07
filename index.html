@@ -14,7 +14,7 @@
 <body>
     <div class="head top-head">
         <div class="container">
-            <div class="logo">
+            <div class="logo" id="logo">
                 <img src="src/img/logo.png" alt="Claystones logo" />
                 <button class="hamburger-btn" onclick="toggleLinks()">
                     <div class="hamburger">
@@ -26,20 +26,20 @@
             </div>
             <ul class="links">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Outlets</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#outlets">Outlets</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
 
-    <div class="main">
+    <div class="main" id="main">
         <div class="box">
             <div class="content">
                 <h2>Molding the <br> earth into art</h2>
-                <button class="btn primary">Explore more<i class="fas fa-arrow-right"></i></button>
+                <a href="#gallery" class="btn primary">Explore more<i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
         <div class="box">
@@ -56,7 +56,7 @@
         </div>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="container">
             <div class="quote">
                 <img src="src/img/quote.png" alt="Quote icon" />
@@ -67,7 +67,7 @@
                 <h3>JOHN DOE</h3>
                 <h4>FOUNDER/CEO</h4>
             </div>
-            <div class="gallery">
+            <div class="gallery" id="gallery">
                 <div class="column">
                     <div class="image flex1" style="background: url(src/img/gallery-1.png);"></div>
                 </div>
@@ -112,19 +112,19 @@
         </div>
     </div>
 
-    <div class="outlets">
+    <div class="outlets" id="outlets"> 
         <div class="container">
             <div class="content">
                 <h2>Our Outlets</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et</p>
+                <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et</p>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.28917327817!2d-122.35146608494833!3d47.62050989501112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490151f4ed5b7f9%3A0xdb2ba8689ed0920d!2sSpace%20Needle!5e0!3m2!1sen!2sin!4v1647776554199!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.8828289982657!2d76.30640581413361!3d10.026526875329562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080dafbed183bf%3A0x5951f316ba13a37e!2sLuLu%20International%20Shopping%20Malls%20Private%20Limited%20Kochi!5e0!3m2!1sen!2sin!4v1649308701728!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
 
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <div class="container">
             <div class="caption">
                 <img src="src/img/twig.png" alt="Twig image">
@@ -144,7 +144,7 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="container">
             <div class="box">
                 <div class="content">
@@ -153,13 +153,15 @@
                         eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="details">
                         <i class="fas fa-phone"></i>
-                        <h3><a href="tel:+1(308)321321">+1 (308) 321 321</a></h3>
+                        <h3><a href="tel:+919886479647">+91 98864 79647</a></h3>
                     </div>
                     <div class="details">
                         <i class="fa-regular fa-envelope"></i>
-                        <h3><a href="mailto:Info@alphas.com">Info@alphas.com</a></h3>
+                        <h3><a href="mailto:info@claystones.in">Info@claystones.in</a></h3>
                     </div>
-                    <p>545, Street 11, Block F <br> Dean Boulevard, Ohio</p>
+                    <p>Lulu mall <br> 
+                        Edappally junction <br>
+                        Nethaji nagar, Kerala 682024</p>
                     <a href="#" class="link">View Job Openings</a>
                 </div>
                 <form action="post">
@@ -200,13 +202,13 @@
                 <div class="links">
                     <h3>Information</h3>
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#outlets">Outlets</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="links">
+                <!-- <div class="links">
                     <h3>Shop</h3>
                     <ul>
                         <li><a href="#">My Cart</a></li>
@@ -222,7 +224,7 @@
                         <input type="text" name="email" id="email" placeholder="your@email.address"/>
                         <button type="submit"><i class="fa-regular fa-envelope"></i></button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="sub">
@@ -231,16 +233,16 @@
                     <img src="src/img/headphones.png" alt="Customer care icon" />
                     <div class="content">
                         <h4>CALL US 24/7</h4>
-                        <h3>1800 8080 888</h3>
+                        <h3>+91 98864 79647</h3>
                     </div>
                 </div>
                 <div class="top">
-                    <button class="rounded primary small"><i class="fas fa-angle-up"></i></button>
+                    <a href="#logo" class="rounded primary small"><i class="fas fa-angle-up"></i></a>
                     <h4>BACK TO TOP</h4>
                 </div>
-                <div class="payments">
+                <!-- <div class="payments">
                     <img src="src/img/payments.png" alt="Payments logo" />
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -248,9 +250,25 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
         function toggleLinks() {
-            console.log('hie');
             $('.head .links').toggleClass('active');
         }
+
+        $(".links li a").click(function(e) {
+            e.preventDefault();
+            var aid = $(this).attr("href");
+            $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+            toggleLinks();
+        });
+        $("a.rounded.primary").click(function(e) {
+            e.preventDefault();
+            var aid = $(this).attr("href");
+            $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+        });
+        $("a.btn").click(function(e) {
+            e.preventDefault();
+            var aid = $(this).attr("href");
+            $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+        });
     </script>
 </body>
 </html>
