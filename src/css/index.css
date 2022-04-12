@@ -187,8 +187,6 @@ button.rounded.primary, a.rounded.primary{
     font-size: 0.75rem;
     color: #fff;
     font-weight: 200;
-    height: 100%;
-    width: 100%;
     flex: 0;
     display: inline-block;
     align-items: center;
@@ -870,8 +868,30 @@ button.rounded.primary, a.rounded.primary{
     .main{
         grid-template-columns: repeat(1, 1fr);
     }
+    .main .box{
+        width: 100vw;
+    }
     .main .box .slide{
+        padding: 1rem;
+        width: calc(100% - 2rem);
+        align-items: flex-start;
+        flex-direction: column-reverse;
         justify-content: space-between;
+        overflow: hidden;
+    }
+    .main .box .slide .contents{
+        width: 100vw;
+    }
+    .main .box .slide .nav{
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+    .main .box .slide .nav button:first-of-type{
+        margin-left: 0;
+    }
+    .main .box .slide p{
+        align-items: center;
+        width: auto;
     }
 
     .gallery{
