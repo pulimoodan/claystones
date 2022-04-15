@@ -56,6 +56,11 @@ button.rounded.outlined{
     color: #fff;
 }
 
+button.rounded.outlined.black{
+    border: 1px solid rgb(56, 56, 56);
+    color: rgb(56, 56, 56);;
+}
+
 button.rounded.primary, a.rounded.primary{
     border: none;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
@@ -520,9 +525,24 @@ button.rounded.primary, a.rounded.primary{
     opacity: 0.5;
 }
 
-.outlets iframe{
+.outlets .content .nav{
+    display: flex;
+    flex-direction: row;
+    width:70px;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.outlets .iframe-slide{
     width: 70%;
     height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.outlets .iframe-slide iframe{
+    height: 350px;
+    display: inline-block;
 }
 
 .portfolio{
@@ -917,8 +937,9 @@ button.rounded.primary, a.rounded.primary{
     .outlets .content{
         margin: 0;
         margin-bottom: 2rem;
+        width: auto;
     }
-    .outlets iframe{
+    .outlets .iframe-slide{
         width: 100%;
     }
 
